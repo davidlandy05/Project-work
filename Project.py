@@ -6,7 +6,7 @@ import serial
  
 ser = serial.Serial()
 ser.baudrate = 115200
-ser.port = "COM5"
+ser.port = "COM4"
 ser.open()
 
 cred = credentials.Certificate("C:/Users/18DLandy.ACC/Downloads/leaving-cert-project-9a808-firebase-adminsdk-xb3od-0192c6e1b1.json")
@@ -14,14 +14,24 @@ firebase_admin.initialize_app(cred,{'databaseURL':'https://leaving-cert-project-
 ref = db.reference()
 ref.update({'Steps ran':''})
 ref = db.reference().child('Steps ran')
-
+hours_of_sleep = 0
+work =1
+wellbeing =2
+steps = 3
 while True:
     mb_one = str(ser.readline().decode('utf-8'))
-    print(mb_one)
+    print(repr(mb_one.strip()))
+    data_in =mb_one.strip().split(',')
+    
+    print(data_in[hours_of_sleep])
+    print(data_in[work])
+    print(data_in[wellbeing])
+    print(data_in[steps])
+    
     mb_one = mb_one.replace(" ","")
     mb_one = mb_one.replace("\r\n","")
     print("You have walked ",mb_one," steps")
-    ref.update({str(int(time.time())):{'Steps ran':mb_one}})
+    ref.update({str(int(time.time())):{'Steps ran':(data_in[steps]),"Hours worked":(data_in[work]),"Your wellbeing is":(data_in[wellbeing]),"You slept":(data_in[hours_of_sleep])}})
     
     
     
