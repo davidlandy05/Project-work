@@ -6,10 +6,10 @@ import serial
  
 ser = serial.Serial()
 ser.baudrate = 115200
-ser.port = "COM4"
+ser.port = "COM5"
 ser.open()
 
-cred = credentials.Certificate("C:/Users/18DLandy.ACC/Downloads/leaving-cert-project-9a808-firebase-adminsdk-xb3od-0192c6e1b1.json")
+cred = credentials.Certificate("C:/Users/18DLandy.ACC/Downloads/leaving-cert-project-9a808-firebase-adminsdk-xb3od-f5778ac9f8.json")
 firebase_admin.initialize_app(cred,{'databaseURL':'https://leaving-cert-project-9a808-default-rtdb.europe-west1.firebasedatabase.app/'})
 ref = db.reference()
 ref.update({'Steps ran':''})
@@ -28,11 +28,28 @@ while True:
     print(data_in[wellbeing])
     print(data_in[steps])
     
+    well=""
+    mood=data_in[wellbeing]
+    mood=int(mood)
+    if mood==0:
+        well=well+"forget to register"
+    elif mood==1:
+        well=well+"very sad"
+    elif mood==2:
+        well=well+"sad"
+    elif mood==3:
+        well=well+"okay"
+    elif mood==4:
+        well=well+"happy"
+    elif mood==5:
+        well=well+"very happy"
+    
     mb_one = mb_one.replace(" ","")
     mb_one = mb_one.replace("\r\n","")
-    print("You have walked ",mb_one," steps")
-    ref.update({str(int(time.time())):{'Steps ran':(data_in[steps]),"Hours worked":(data_in[work]),"Your wellbeing is":(data_in[wellbeing]),"You slept":(data_in[hours_of_sleep])}})
+    ref.update({str(int(time.time())):{'Steps ran':(data_in[steps]),"Hours worked":(data_in[work]),"Your wellbeing is":well,"You slept":(data_in[hours_of_sleep])}})
     
     
+    
+
     
     
