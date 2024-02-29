@@ -14,25 +14,57 @@ ref = db.reference().child('Steps ran')
 
 data=ref.get()
 print(data)
-hours_of_sleep = 0
-work =1
-wellbeing =2
-steps = 3
 
-for k,v in data.items():
-    print(k)
-    print(v["Hours worked"])
+sleep=[]
+walked=[]
+mood=[]
+worked=[]
+
+
+for key,value in data.items():
+    sleepy=int((value["You slept"]))
+    sleep.append(sleepy)
+    slept=sum(sleep)
+    print(slept)
+    
+    works=int((value["Hours worked"]))
+    worked.append(works)
+    worked=sum(worked)
+    print(worked)
+    
+    steps=int((value["Steps ran"]))
+    steps=steps/2
+    walked.append(steps)
+    print(steps)
+    
+    if (Value['Your wellbeing is'])=="forget to register":
+        mood=mood+0
+    elif (Value['Your wellbeing is'])=="very sad":
+        mood=mood+1
+    elif (Value['Your wellbeing is'])=="sad":
+        mood=mood+2
+    elif (Value['Your wellbeing is'])=="okay":
+        mood=mood+3
+    elif (Value['Your wellbeing is'])=="happy":
+        mood=mood+4
+    elif (Value['Your wellbeing is'])=="very happy":
+        mood=mood+5
+    print(mood)    
+        
+        
+ 
     
 
 
-objects = ('hours of sleep,work,wellbeing,steps(divided by 1000')
-y_pos = [0,1,2,3]
-performance = [1,2,3,4,5,6,7,8,9,1]
 
-plt.bar(y_pos, performance, align='center', alpha=0.5)
+#objects = ('hours of sleep,work,wellbeing,steps(divided by 1000')
+#y_pos = [0,1,2,3]
+#performance = []
 
-plt.ylabel('Usage')
-plt.title('Programming language usage')
+#plt.bar(y_pos, performance, align='center', alpha=0.5)
 
-plt.show()
+#plt.ylabel('Usage')
+#plt.title('Programming language usage')
+
+#plt.show()
     
