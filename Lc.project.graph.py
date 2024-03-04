@@ -4,6 +4,7 @@ from firebase_admin import credentials
 from firebase_admin import db
 import serial
 import matplotlib.pyplot as plt
+import math
 
 
 
@@ -13,58 +14,82 @@ ref = db.reference()
 ref = db.reference().child('Steps ran')
 
 data=ref.get()
-print(data)
+
 
 sleep=[]
 walked=[]
 mood=[]
 worked=[]
-
+counter=0
 
 for key,value in data.items():
     sleepy=int((value["You slept"]))
     sleep.append(sleepy)
     slept=sum(sleep)
-    print(slept)
+
     
     works=int((value["Hours worked"]))
     worked.append(works)
-    worked=sum(worked)
-    print(worked)
+    works=sum(worked)
+
+
     
     steps=int((value["Steps ran"]))
     steps=steps/2
     walked.append(steps)
-    print(steps)
+    steped=sum(walked)
+   
     
-    if (Value['Your wellbeing is'])=="forget to register":
-        mood=mood+0
-    elif (Value['Your wellbeing is'])=="very sad":
-        mood=mood+1
-    elif (Value['Your wellbeing is'])=="sad":
-        mood=mood+2
-    elif (Value['Your wellbeing is'])=="okay":
-        mood=mood+3
-    elif (Value['Your wellbeing is'])=="happy":
-        mood=mood+4
-    elif (Value['Your wellbeing is'])=="very happy":
-        mood=mood+5
-    print(mood)    
-        
-        
+    if (value['Your wellbeing is'])=="forget to register":
+        wellbeing=0
+        counter=counter+1
+        fort=wellbeing/counter
+        mood.append(fort)
+    elif (value['Your wellbeing is'])=="very sad":
+         wellbeing=1
+         counter=counter+1
+         fort=wellbeing/counter
+         mood.append(fort)
+    elif (value['Your wellbeing is'])=="sad":
+         wellbeing=2
+         counter=counter+1
+         fort=wellbeing/counter
+         mood.append(fort)
+    elif (value['Your wellbeing is'])=="okay":
+         wellbeing=3
+         counter=counter+1
+         fort=wellbeing/counter
+         mood.append(fort)
+    elif (value['Your wellbeing is'])=="happy":
+         wellbeing=4
+         counter=counter+1
+         fort=wellbeing/counter
+         mood.append(fort)
+    elif (value['Your wellbeing is'])=="very happy":
+         wellbeing=5
+         counter=counter+1
+         fort=wellbeing/counter
+         mood.append(fort)
+    moody=sum(mood)
+    moody=math.floor(moody)
+                                       
  
-    
+
+print(slept)        
+print(works)        
+print(steped)    
+print(moody)
 
 
+objects = ('hours of sleep,work,wellbeing,steps(divided by 1000)')
+y_pos = [0,1,2,3]
+performance = [slept,works,steped,moody]
 
-#objects = ('hours of sleep,work,wellbeing,steps(divided by 1000')
-#y_pos = [0,1,2,3]
-#performance = []
+plt.bar(y_pos, performance, align='center', alpha=0.5)
 
-#plt.bar(y_pos, performance, align='center', alpha=0.5)
+plt.ylabel('Hours/steps (divided by 1000)')
+plt.xlabel('hours of sleep,work,wellbeing,steps(divided by 1000)')
+plt.title('Your wellbeing')
 
-#plt.ylabel('Usage')
-#plt.title('Programming language usage')
-
-#plt.show()
+plt.show()
     
