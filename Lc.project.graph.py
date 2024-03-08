@@ -4,7 +4,10 @@ from firebase_admin import db
 import matplotlib.pyplot as plt
 import math
 
-
+Graph=input("To see a graph of your daily averages input 1."
+            "If you want to see a graph of your productivity on your longest hour of sleep compared to lowest hours of sleep input 2."
+            "If you want to see a graph your sleep on your most active day compared to lowest amount of exercise input 3")
+Graph=int(Graph)
 
 cred = credentials.Certificate("C:/Users/18DLandy.ACC/Downloads/leaving-cert-project-9a808-firebase-adminsdk-xb3od-0797d54160.json")
 firebase_admin.initialize_app(cred,{'databaseURL':'https://leaving-cert-project-9a808-default-rtdb.europe-west1.firebasedatabase.app/'})
@@ -144,35 +147,6 @@ slept_from_highest_steped = variables[highest_steped_key]['slept']
 mood_from_lowest_steped = variables[lowest_steped_key]['moody']
 slept_from_lowest_steped = variables[lowest_steped_key]['slept']
 
- 
-
-
-#print(f"Highest Slept: {highest_slept} (from variable {highest_slept_key})")
-#print(f"Lowest Slept: {lowest_slept} (from variable {lowest_slept_key})")
-#print(f"Highest Steped: {highest_steped} (from variable {highest_steped_key})")
-#print(f"Lowest Steped: {lowest_steped} (from variable {lowest_steped_key})")
-#print(f"Mood value from the variable with the highest Slept: {mood_from_highest_slept}")
-#print(f"Works value from the variable with the highest Slept: {works_from_highest_slept}")
-#print(f"Mood value from the variable with the lowest Slept: {mood_from_lowest_slept}")
-#print(f"Works value from the variable with the lowest Slept: {works_from_lowest_slept}")
-
-#Difference_slept=highest_slept-lowest_slept
-#Difference_mood=mood_from_highest_slept-mood_from_lowest_slept
-#Difference_works=works_from_highest_slept-works_from_lowest_slept
-    
-#Difference_exercise=highest_steped-lowest_steped
-#Difference_mood2=mood_from_highest_steped-mood_from_lowest_steped
-#Difference_slept2=slept_from_highest_steped-slept_from_lowest_steped
-    
-
-
-#print("When your sleep increased by",Difference_slept,"hours you mood increased by",Difference_mood,"units")
-#print("When your sleep increased by",Difference_slept,"hours you productivity increased by",Difference_works,"hours")
-#print("When your exercise increased by",Difference_exercise,"steps your sleep  increased by",Difference_mood,"hours")
-#print("When your excercise increased by",Difference_exercise,"steps your mood increased by",Difference_works,"units")
-
-
-
 
 well=""
 mood1=mood_from_highest_slept
@@ -298,19 +272,49 @@ if R2counter==1:
 else:
     print("Well done you are getting the recommend amount of steps!")
     
-print(Nsteped)
-print(Nwork)
-print(Nmood)
-print(Nslept)
+if Graph==3:
+    objects = ('highest_slept,lowest_slept,works_from_highest_slept,works_from_lowest_slept')
+    y_pos = [0,1,2,3]
+    performance = [highest_slept,lowest_slept,works_from_highest_slept,works_from_lowest_slept]
 
-objects = ('hours of sleep,work,wellbeing,steps(divided by 1000)')
-y_pos = [0,1,2,3]
-performance = [Nslept,Nwork,Nsteped,Nmood]
+    plt.bar(y_pos, performance, align='center', alpha=0.5)
 
-plt.bar(y_pos, performance, align='center', alpha=0.5)
+    plt.ylabel('Hours')
+    plt.xlabel('highest_slept,lowest_slept,works_from_highest_slept,works_from_lowest_slept')
+    plt.title('Your productivity on your longest hour of sleep compared to lowest hours of sleep')
 
-plt.ylabel('Hours/steps (divided by 1000)')
-plt.xlabel('hours of sleep,work,wellbeing,steps(divided by 1000)')
-plt.title('Your average wellbeing stats per day')
+    plt.show()
 
-plt.show()
+elif Graph==1:    
+    objects = ('hours of sleep,work,wellbeing,steps(divided by 1000)')
+    y_pos = [0,1,2,3]
+    performance = [Nslept,Nwork,Nsteped,Nmood]
+
+    plt.bar(y_pos, performance, align='center', alpha=0.5)
+
+    plt.ylabel('Hours/steps (divided by 1000)')
+    plt.xlabel('hours of sleep,work,wellbeing,steps(divided by 1000)')
+    plt.title('Your average wellbeing stats per day')
+
+    plt.show()
+
+
+elif Graph==2: 
+    objects = ('highest_steped,lowest_steped,slept_from_highest_steped,slept_from_lowest_steped')
+    y_pos = [0,1,2,3]
+    performance = [highest_steped,lowest_steped,slept_from_highest_steped,slept_from_lowest_steped]
+
+    plt.bar(y_pos, performance, align='center', alpha=0.5)
+
+    plt.ylabel('Hours')
+    plt.xlabel('highest_steped,lowest_steped,slept_from_highest_steped,slept_from_lowest_steped')
+    plt.title('Your sleep on your most active day compared to lowest amount of exercise')
+
+    plt.show()
+
+
+
+
+
+
+
