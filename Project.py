@@ -29,7 +29,7 @@ while True:
     print(data_in[hours_of_sleep])
 
 
-    
+    counter=0
     well=""
     mood=data_in[wellbeing]
     mood=int(mood)
@@ -45,6 +45,8 @@ while True:
         well=well+"happy"
     elif mood==5:
         well=well+"very happy"
+    counter=counter+1
+    mood=mood/counter
 
     
     mb_one = mb_one.replace(" ","")
