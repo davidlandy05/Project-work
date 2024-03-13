@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-13T22:47:43.890Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="Kc5YP-HCvqMloYNr5Adf" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-13T22:55:23.072Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="Gb6K44ZyMTt9OXC0u6Vm" version="24.0.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="3723" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3935" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -654,8 +654,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dmr-9X637sn1EO4gZVLF-378" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dmr-9X637sn1EO4gZVLF-372" target="dmr-9X637sn1EO4gZVLF-377" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="dmr-9X637sn1EO4gZVLF-378" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dmr-9X637sn1EO4gZVLF-372" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-470" y="4750" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dmr-9X637sn1EO4gZVLF-381" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;No&lt;/font&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="dmr-9X637sn1EO4gZVLF-378" vertex="1" connectable="0">
           <mxGeometry x="-0.3464" y="3" relative="1" as="geometry">
@@ -664,12 +666,6 @@
         </mxCell>
         <mxCell id="dmr-9X637sn1EO4gZVLF-372" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;check if any values left in dictionary&lt;/font&gt;&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-570.31" y="4430" width="199.38" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="dmr-9X637sn1EO4gZVLF-377" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;break code&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-519.99" y="4750" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="dmr-9X637sn1EO4gZVLF-380" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dmr-9X637sn1EO4gZVLF-377" target="dmr-9X637sn1EO4gZVLF-377" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dmr-9X637sn1EO4gZVLF-396" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dmr-9X637sn1EO4gZVLF-384" target="dmr-9X637sn1EO4gZVLF-393" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -776,13 +772,25 @@
         <mxCell id="Kg4Risi4rIkdFInAmCGF-3" value="Nmood=mood/counter and then is math.floored" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1210" y="6100" width="200" height="133" as="geometry" />
         </mxCell>
-        <mxCell id="Kg4Risi4rIkdFInAmCGF-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-8">
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-8" target="dmr-9X637sn1EO4gZVLF-393">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-1270" y="4670" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1269" y="6390" />
+              <mxPoint x="-1269" y="4670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-18" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Kg4Risi4rIkdFInAmCGF-15">
+          <mxGeometry x="-0.9579" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-8" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;check if any values are left in dictionary&lt;/font&gt;&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1239.6299999999999" y="6320" width="259.25" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-19" value="prints the average productivity while getting the current average sleep and steps" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=0;arcSize=12;size=0.04627592454783746;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-649.07" y="4750" width="309.07" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
