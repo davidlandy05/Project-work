@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-13T23:11:57.945Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="VJSKI_SypAHgmOfpOFi6" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-13T23:28:55.026Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="YNx8M29QJDi-ZpqLTrt-" version="24.0.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="3723" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -806,6 +806,9 @@
         <mxCell id="Kg4Risi4rIkdFInAmCGF-25" value="Find highest and lowest slept in dictionaryand create highest and lowest slept key&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-745" y="6480" width="100" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-26" target="Kg4Risi4rIkdFInAmCGF-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-26" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;check if any values are left in dictionary&lt;/font&gt;&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-815" y="6950" width="239.87" height="130" as="geometry" />
         </mxCell>
@@ -820,7 +823,50 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-36" value="Find highest and lowest steped in dictionary and create highest and lowest steped key&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-745" y="6660" width="100" height="100" as="geometry" />
+          <mxGeometry x="-745" y="6657" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-37" target="Kg4Risi4rIkdFInAmCGF-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-37" value="Gets values of highest&amp;nbsp; and lowest work and mood from lowest and highest slept" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-757.5" y="7150" width="125" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-38" target="Kg4Risi4rIkdFInAmCGF-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-38" value="Gets value of highest and lowest sleep and mood from highest and lowest steped" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-745" y="7330" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-42" target="Kg4Risi4rIkdFInAmCGF-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-42" value="Run function reccomendation" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-745.0699999999999" y="7599" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-43" target="Kg4Risi4rIkdFInAmCGF-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-43" value="converts mood from its&amp;nbsp; number value to string values" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-745" y="7470" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-695" y="7880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-46" value="Run function reccomendation2" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-744.9999999999999" y="7730" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-687.5" y="8123" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-51" value="Reccomend if user should increase or mantain hours of sleep and explains side effects of current sleeping habit" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-900" y="7880" width="430" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-55" value="Reccomend if user should increase or mantain amount of stepsand explains side effects of current excercise habit" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-910.07" y="8120" width="430" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
