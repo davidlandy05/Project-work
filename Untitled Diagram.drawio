@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-13T23:28:55.026Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="YNx8M29QJDi-ZpqLTrt-" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-13T23:48:50.545Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="FE7ySXlrIxOw9yE3tgLm" version="24.0.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="3723" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3788" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -867,6 +867,27 @@
         </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-55" value="Reccomend if user should increase or mantain amount of stepsand explains side effects of current excercise habit" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-910.07" y="8120" width="430" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-56" target="Kg4Risi4rIkdFInAmCGF-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-56" value="Start of recommendation function" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1995" y="6170" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-57" target="Kg4Risi4rIkdFInAmCGF-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-57" value="slept,highest_slept,lowest_slept,well,well2,works_from_highest_slept,works_from_lowest_slept" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.014150943396226415;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2220" y="6340" width="560" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-60" value="reccomend=0" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2000" y="6495" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-62" value="Calls function recommendation&amp;nbsp;(slept,highest_slept,lowest_slept,well,well2,works_from_highest_slept,works_from_lowest_slept" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2320" y="6657" width="630" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.6;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-60" target="Kg4Risi4rIkdFInAmCGF-62">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
