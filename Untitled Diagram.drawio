@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-14T00:06:10.790Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="5rxmSNL9g13KOd5u5nWu" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-14T00:10:10.873Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="uurqh5VkCM8tJMHqVTDJ" version="24.0.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="3536" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -904,8 +904,31 @@
         <mxCell id="Kg4Risi4rIkdFInAmCGF-68" value="&amp;nbsp;Difference_works=works_from_highest_slept-works_from_lowest_slept" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-2100" y="7070" width="320" height="150" as="geometry" />
         </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-70" target="Kg4Risi4rIkdFInAmCGF-74">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1940" y="7560" />
+              <mxPoint x="-1940" y="7560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-70" value="Prints how much your mood and&lt;div&gt;productivity increased when your&lt;/div&gt;&lt;div&gt;sleep increased by difference_slept&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=0;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-2085" y="7330" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-74" target="Kg4Risi4rIkdFInAmCGF-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-74" target="Kg4Risi4rIkdFInAmCGF-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-74" value="checks if sleep=&amp;gt;8" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2000" y="7560" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-76" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1990" y="7710" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-77" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1810" y="7560" width="100" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
