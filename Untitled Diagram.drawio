@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-14T00:15:17.604Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="D2hfvNLxjTLx2oS4Enwt" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-14T00:17:52.511Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="ArFYfIPDdIm3We8diUs3" version="24.0.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="3536" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="6489" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -934,6 +934,9 @@
         <mxCell id="Kg4Risi4rIkdFInAmCGF-74" value="checks if sleep=&amp;gt;8" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-2000" y="7560" width="120" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-76" target="Kg4Risi4rIkdFInAmCGF-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-76" value="Tells user they got enough sleep and side-effects of Maintaining habit" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1990" y="7710" width="100" height="100" as="geometry" />
         </mxCell>
@@ -951,8 +954,26 @@
         <mxCell id="Kg4Risi4rIkdFInAmCGF-81" value="Rcounter=Rcounter+1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1562" y="7560" width="172" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-84" target="Kg4Risi4rIkdFInAmCGF-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-84" value="Tell user they need value of Better more sleep to reach recommend sleep and side-effects of current sleept" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1300" y="7560" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-86" target="Kg4Risi4rIkdFInAmCGF-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-86" target="Kg4Risi4rIkdFInAmCGF-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-86" value="better=0" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1990" y="7890" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-88" value="return recommend, better, Rcounter,Difference_slept,well,Difference_works,well2" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1432.5" y="7800" width="365" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-89" value="return recommend, better, Rcounter,Difference_slept,well,Difference_works,well2" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2160" y="8080" width="440" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
