@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-14T00:17:52.511Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="ArFYfIPDdIm3We8diUs3" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-14T00:22:16.895Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="4-zysgEeNCOGpKRu4ATO" version="24.0.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="6489" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="5821" dy="2010" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -866,7 +866,7 @@
           <mxGeometry x="-900" y="7880" width="430" height="180" as="geometry" />
         </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-55" value="Reccomend if user should increase or mantain amount of stepsand explains side effects of current excercise habit" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-910.07" y="8120" width="430" height="180" as="geometry" />
+          <mxGeometry x="-910" y="8130" width="430" height="180" as="geometry" />
         </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-56" target="Kg4Risi4rIkdFInAmCGF-57">
           <mxGeometry relative="1" as="geometry" />
@@ -974,6 +974,116 @@
         </mxCell>
         <mxCell id="Kg4Risi4rIkdFInAmCGF-89" value="return recommend, better, Rcounter,Difference_slept,well,Difference_works,well2" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-2160" y="8080" width="440" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-96" target="Kg4Risi4rIkdFInAmCGF-98" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-96" value="Start of recommendation function" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1780" y="8860" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="Kg4Risi4rIkdFInAmCGF-98" target="Kg4Risi4rIkdFInAmCGF-100" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-98" value="slept,highest_slept,lowest_slept,well,well2,works_from_highest_slept,works_from_lowest_slept" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.014150943396226415;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2005" y="9030" width="560" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-100" target="Kg4Risi4rIkdFInAmCGF-102" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-100" value="Rcounter=0" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1790" y="9160" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-101" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-102" target="Kg4Risi4rIkdFInAmCGF-104" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-102" value="Calls function recommendation&amp;nbsp;(slept,highest_slept,lowest_slept,well,well2,works_from_highest_slept,works_from_lowest_slept" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2045" y="9290" width="630" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-104" target="Kg4Risi4rIkdFInAmCGF-106" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-104" value="Diffence_slept=highest_slept-lowest_slept" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1890" y="9460" width="320" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-106" target="Kg4Risi4rIkdFInAmCGF-108" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-106" value="&amp;nbsp;Difference_works=works_from_highest_slept-works_from_lowest_slept" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1890" y="9660" width="320" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-108" target="Kg4Risi4rIkdFInAmCGF-113" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1725" y="10250" />
+              <mxPoint x="-1725" y="10250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-108" value="Prints how much your mood and&lt;div&gt;productivity increased when your&lt;/div&gt;&lt;div&gt;sleep increased by difference_slept&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=0;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1875" y="9920" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-113" target="Kg4Risi4rIkdFInAmCGF-115" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-110" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Kg4Risi4rIkdFInAmCGF-109">
+          <mxGeometry x="-0.5642" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="Kg4Risi4rIkdFInAmCGF-113" target="Kg4Risi4rIkdFInAmCGF-117" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-112" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Kg4Risi4rIkdFInAmCGF-111">
+          <mxGeometry x="-0.4827" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-113" value="checks if sleep=&amp;gt;8" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1803.12" y="10150" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-114" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-115" target="Kg4Risi4rIkdFInAmCGF-124" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-115" value="Tells user they got enough sleep and side-effects of Maintaining habit" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1775" y="10400" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-117" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1355" y="10300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-117" value="Better=8-slept" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1595" y="10150" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="Kg4Risi4rIkdFInAmCGF-119" target="Kg4Risi4rIkdFInAmCGF-121" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-119" value="Rcounter=Rcounter+1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1342" y="10150" width="172" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="Kg4Risi4rIkdFInAmCGF-121" target="Kg4Risi4rIkdFInAmCGF-125" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-121" value="Tell user they need value of Better more sleep to reach recommend sleep and side-effects of current sleept" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1075.75" y="10150" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-124" target="Kg4Risi4rIkdFInAmCGF-126" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-123" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Kg4Risi4rIkdFInAmCGF-124" target="Kg4Risi4rIkdFInAmCGF-126" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-124" value="better=0" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1775" y="10580" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-125" value="return recommend, better, Rcounter,Difference_slept,well,Difference_works,well2" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1208.25" y="10340" width="365" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-126" value="return recommend, better, Rcounter,Difference_slept,well,Difference_works,well2" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1945" y="10770" width="440" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Kg4Risi4rIkdFInAmCGF-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Kg4Risi4rIkdFInAmCGF-115" target="Kg4Risi4rIkdFInAmCGF-115">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
