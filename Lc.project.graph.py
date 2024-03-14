@@ -4,10 +4,13 @@ from firebase_admin import db
 import matplotlib.pyplot as plt
 import math
 
-Graph=input("To see a graph of your daily averages input 1."
+while True:
+    Graph=input("To see a graph of your daily averages input 1."
             "If you want to see a graph of your productivity on your longest hour of sleep compared to lowest hours of sleep input 2."
             "If you want to see a graph your sleep on your most active day compared to lowest amount of exercise input 3")
-print("\n")
+    print("\n")
+    if Graph in['1','2','3']:
+        break
 Graph=int(Graph)
 
 cred = credentials.Certificate("C:/Users/18DLandy.ACC/Downloads/leaving-cert-project-9a808-firebase-adminsdk-xb3od-0797d54160.json")
@@ -42,9 +45,9 @@ for key,value in data.items():
     
     works=int((value["Hours worked"]))
     worked.append(works)
-    works=sum(worked)
+    work=sum(worked)
     counter2=counter2+1
-    Nwork=works/counter2
+    Nwork=work/counter2
     Nwork=math.floor(Nwork)
 
 
@@ -63,43 +66,38 @@ for key,value in data.items():
     if (value['Your wellbeing is'])=="forget to register":
         wellbeing=0
         counter=counter+1
-        fort=wellbeing/counter
-        mood.append(fort)
+        mood.append(wellbeing)
         
     elif (value['Your wellbeing is'])=="very sad":
         wellbeing=1
         counter=counter+1
-        fort=wellbeing/counter
-        mood.append(fort)
+        mood.append(wellbeing)
          
     elif (value['Your wellbeing is'])=="sad":
         wellbeing=2
         counter=counter+1
-        fort=wellbeing/counter
-        mood.append(fort)
+        mood.append(wellbeing)
          
     elif (value['Your wellbeing is'])=="okay":
         wellbeing=3
         counter=counter+1
-        fort=wellbeing/counter
-        mood.append(fort)
+        mood.append(wellbeing)
          
     elif (value['Your wellbeing is'])=="happy":
         wellbeing=4
         counter=counter+1
-        fort=wellbeing/counter
-        mood.append(fort)
+        mood.append(wellbeing)
          
     elif (value['Your wellbeing is'])=="very happy":
         wellbeing=5
         counter=counter+1
-        fort=wellbeing/counter
-        mood.append(fort)
+        mood.append(wellbeing)
          
     moody=sum(mood)
     moody=math.floor(moody)
     Nmood=moody/counter
     Nmood=math.floor(Nmood)
+    
     variables[f'day{counter}'] = {
         'slept': sleepy,
         'works': works,
