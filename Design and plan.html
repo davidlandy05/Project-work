@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CssLC.css">
+    <title>Activity Log and Important Code</title>
+</head>
+<body>
+  
+    
+    <h1>Activity Log and Important Code</h1>
+    <p>
+        <a href="Homepage.html">Homepage</a>
+        <br>
+        <a href="Design and plan.html">Design and plan</a>
+        <br>
+        <a href="Investigation.html">Investigation</a>     
+        <br>
+        <a href="Evaluation.html">Evaluation</a>     
+        <br> 
+        <a href="references.html">References</a>     
+        <br> 
+    
+        
+
+    <p>
+    <h2>Activity Log</h2>
+    <ul>
+        <li><strong>Week 1:</strong> First week I did my investigation and decided which features were most important to my app</li>
+        <li><strong>Week 2:</strong> This week I created my flowchart and plan. I made microbit code for user to input variables through microbit.</li>
+        <img src="c:\Users\18DLandy.ACC\Pictures\day1.2.png">
+        <img src="c:\Users\18DLandy.ACC\Pictures\day1.3.png">
+        <li><strong>Week 3:</strong> In this week I made microbit code which sends my variables to the second microbit and prints to thonny.</li>
+        <img src="c:\Users\18DLandy.ACC\Pictures\day2.1.png">
+        <img src="c:\Users\18DLandy.ACC\Pictures\day2.2.png">
+        <li><strong>Week 4:</strong> I created python code which sends information from second microbit and stores it on firebase. Also made code to convert number value to string value for firebase.eg.1=very sad.</li>
+        <img src="c:\Users\18DLandy.ACC\Pictures\day4.1.png">
+        <li><strong>Week 5:</strong> I created code to add all values in a list for both sleep and worked and created a Nworked and Nslept variable to store average value.</li>
+        <img src="c:\Users\18DLandy.ACC\Pictures\day5.1.png">
+        <li><strong>Week 6:</strong> I implemented the same principle as before but added steps. Added a divide so I could easier graphically show the data.</li>
+        <img src="c:\Users\18DLandy.ACC\Pictures\day6.1.png">
+        <li><strong>Week 7:</strong> I implemented a code that got average mood and also added all of mood into a string.</li>
+        <img src="c:\Users\18DLandy.ACC\Pictures\day7.1.png">
+        <li><strong>Week 8:</strong> I printed out to users what their average productivity with their current sleep and exercise habits and separated each child's value into a variable using a dictionary. A milestone as I figured out how to pull out individual values from different variables in a dictionary.</li>
+        <img src="c:\Users\18DLandy.ACC\Pictures\day8.1.png">
+        <li><strong>Week 9:</strong> Implemented the two functions which will answer my what if questions.</li>
+        <img src="c:\Users\18DLandy.ACC\Pictures\day9.1.png">
+        <img src="c:\Users\18DLandy.ACC\Pictures\day9.2.png">
+        <img src="c:\Users\18DLandy.ACC\Pictures\day9.3.png">
+        <li><strong>Week 10:</strong> Wrote code to display info in graphical form and allow users to choose between graphs.</li>
+        <img src="c:\Users\18DLandy.ACC\Pictures\day10.1.png">
+        <img src="c:\Users\18DLandy.ACC\Pictures\day10.2.png">
+        <li><strong>Week 11:</strong> Readjusted my plan and design. Finished flowchart and recorded video for my brief. Created website.</li>
+        <li><strong>Week 12:</strong> Finished my create and evaluation. Implemented the universal features of design to the website.</li>
+    </ul>
+
+    <h2>An important piece of code</h2>
+    <img src="c:\Users\18DLandy.ACC\Pictures\Important_code.png">
+    <p>This function is an important code as it answers one of my what if questions. The function receives 7 parameters with two different data types (string and integer). The code finds the difference between the highest and lowest sleep and stores it in a variable <code>Difference_slept</code>. It also creates a variable <code>Difference_works</code> which stores the difference of work between work on the day of the highest sleep and work on the day of the lowest sleep. It then prints the difference of work when your hours increased by <code>Difference_slept</code> and how your mood changed when your sleep increased by <code>Difference_slept</code>. It then checks if the <code>slept</code> value is less than 8. If it is, it runs a code telling users that they are not getting enough sleep and they need to improve their habits or they will experience a worse mood and be less productive. It also stores how far the user is off from getting 8 hours of sleep by taking <code>slept</code> away from 8 and storing it in a variable called <code>better</code>. It also adds one to <code>Rcounter</code> which results in the code below running. This tells the user how many more hours they need to get in order to be in line with the kidshealth recommendation. If the <code>slept</code> value is over 8, it tells the user that they are getting enough sleep and outlines the benefit of this sleep. As <code>Rcounter</code> never runs, this means it prints else congratulating the user on reaching the recommended hours.</p>
+    <img src="c:\Users\18DLandy.ACC\Pictures\Important_code.2.png">
+    <h2>Issue I faced</h2>
+    <img src="c:\Users\18DLandy.ACC\Pictures\issue.2.png">
+    <p>A big issue I faced was trying to take an individual value from the child from firebase. After trying a few ways but I was struggling on how to call a certain child and how I was going to get that code run for the amount of inputs I had. I landed on day starting at day1, day2, day3 etc which would continue to increase for each input it would receive. This allowed me to refer to specific days and also take information from specific days. I also then could use a loop that would loop through the dictionary to find which variable had the highest and lowest sleep value which ended up being an essential part of my what if questions and its functions.</p>
+    <img src="c:\Users\18DLandy.ACC\Pictures\issue.1.png">
+    <h2>Unit Test</h2>
+    <img src="c:\Users\18DLandy.ACC\Pictures\Unit_testing.1.png">
+    <p>Function=Compare highest and lowest sleep value get difference then get difference between hours worked on day with most and least sleep.Show correlation of increase in sleep to increase of mood and work.</p>
+    <p>Input=highest_slept=8,lowest sleep=4,well="sad",well2="good",works_from_highest=8_slept,works_from_lowest_slept=4</p>
+    <p>Expected result="When your sleep increased by",4,"hours your mood increased to",sad,"from",good and "When your sleep increased by",4,"hours you productivity increased by",4,"hours"</p>
+    <p>Actual result=""When your sleep increased by",4,"hours your mood increased to",sad,"from",good and "When your sleep increased by",4,"hours you productivity increased by",4,"hours"</p>
+    <p>Changes made=None</p>
+    <img src="c:\Users\18DLandy.ACC\Pictures\Unit_testing.1.png">
+    <h2>my flowchart</h2>
+    <img src="c:\Users\18DLandy.ACC\Downloads\LeavingCert.drawio.png">
+</body>
+</html>
