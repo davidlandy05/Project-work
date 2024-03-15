@@ -53,7 +53,7 @@ for key,value in data.items():
 
     
     steps=int((value["Steps ran"]))
-    steps=steps/2
+    steps=steps/1000
     walked.append(steps)
     steped=sum(walked)
     steped=math.floor(steped)
@@ -105,7 +105,7 @@ for key,value in data.items():
         'moody': moody
     }
 
-print("If you get an average of",Nslept,"hours slept  and walk ",Nsteped,"steps the system predicts you will work an average of",Nwork,"hours") 
+print("The model predicts if you get an average of",Nslept,"hours slept  and walk ",Nsteped,"steps the system predicts you will work an average of",Nwork,"hours") 
 print("\n")    
 #These are averages
 #print(slept)        
@@ -194,9 +194,9 @@ def reccomendation(slept,highest_slept,lowest_slept,well,well2,works_from_highes
     if slept<8:
         better=8-slept
         Rcounter=Rcounter+1
-        recommend.append("You are not getting the recommend hour of sleep according to kidshealth.From this info we predict you will experince worse moods and a fall in productiveness")
+        recommend.append("The model says you are not getting the recommend hour of sleep according to kidshealth.org.From this information the model predict you will experince worse moods and a fall in productiveness")
     else:
-        recommend.append("You are getting the recommend hours of sleep according to kidsheath.From this info we predict tht if this habit is mantained,You will continue to have a good mood and continue to be productive")
+        recommend.append("The model says your are getting the recommend hours of sleep according to kidsheath.org.From this information the model predict tht if this habit is mantained,You will continue to have a good mood and continue to be productive")
         better=0
     
     return recommend, better, Rcounter,Difference_slept,well,Difference_works,well2
@@ -255,15 +255,13 @@ def reccomendation2(steped,highest_steped,lowest_steped,slept_from_highest_stepe
     if steped<10:
         better2=10-steped
         R2counter=R2counter+1
-        recommend2.append("You are not getting the recommend amount of steps according to healthline.From this info the system predicts you will experince fatigue and a worsen mood")
+        recommend2.append("The model says are not getting the recommend amount of steps according to healthline.org.From this information the system predicts you will experince fatigue and a worsen mood")
     else:
-        recommend2.append("You are getting the recommend amount of steps according to heathline .From this info the system predicts that if this habit is mantained,You will continue to have better hours of sleep and continue to have an improved moods")
+        recommend2.append("The model says are getting the recommend amount of steps according to heathline.org.From this information the model predicts that if this habit is mantained,you will continue to have better hours of sleep and continue to have an improved moods")
         better2=0
         R2counter=0
     return recommend2, better2, R2counter, Difference_slept2, Difference_exercise
-
 recommend2, better2, R2counter,  Difference_slept2, Difference_exercise = reccomendation2(steped,highest_slept,lowest_slept,slept_from_highest_steped,slept_from_lowest_steped,well3,well4)
-
 print(recommend2)
 
 if R2counter==1:
